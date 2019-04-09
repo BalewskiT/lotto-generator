@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=480">
+		<script type="text/javascript" src="js/lotto.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>		
+		<section id="lotteryNr">
+			<ul id="lotteryNrList">
+				<div>Losowanie</div>
+			</ul>
+			<button id="lotteryBtn" type="button">Spróbuj szczęścia</button>
+		</section>
+		<script type="text/javascript">
+			var lotteryBtn = document.getElementById('lotteryBtn');
+			lotteryBtn.addEventListener("click", function(){draw_lotto_Nr()});
+
+			function draw_lotto_Nr(){
+				var generator = new LottoNumberGenerator();
+				var numbers = generator.sixLottoNumbers;
+				var list = "";
+				
+				for (var i = 0; i < numbers.length; i++) {
+					list += "<li>"  + numbers[i] + "</li>";
+				}
+
+				var unorderedList = document.getElementById('lotteryNrList');
+				unorderedList.innerHTML = list;
+			};
+		</script>
+	</body>
+	
+</html>

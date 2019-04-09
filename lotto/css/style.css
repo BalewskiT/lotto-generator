@@ -1,0 +1,42 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 30px;
+}
+
+#lotteryNr {
+	max-width: 470px;
+	margin: auto;
+	margin-top: 345px;
+	padding-top: 20px;
+	background-color: deepskyblue;
+}
+
+#lotteryNr button {
+	margin-top: 15px;
+	width: 100%;
+	font-size: 40px;
+}
+
+#lotteryNr ul {
+	height: 50px
+}
+
+#lotteryNr ul > div{
+	text-align: center;
+	font-weight: bold;
+}
+
+#lotteryNrList li {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	margin-left: 15px;
+	padding-top: 5px;
+	background-image: url(../img/lotto_ball2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
